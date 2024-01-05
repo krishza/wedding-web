@@ -1,0 +1,238 @@
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+
+.blog-post__link a:hover,
+a:focus {
+    opacity: .75;
+    text-decoration: underline;
+}
+
+a:active {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+
+
+/**
+* OBJECTS
+*/
+.o-max-width {
+    margin: 0 auto;
+    max-width: 72rem;
+    width: 50%;
+}
+
+.o-site-main {
+    margin: 1.5rem auto;
+}
+
+.blog-box {
+    padding: 1.5rem;
+}
+
+
+/**
+* COMPONENTS
+*/
+.c-site-header,
+.c-site-footer {
+    background: #2b4450;
+    color: #dfebed;
+}
+
+.c-site-header {
+    box-shadow: 0 2px 4px rgba(43, 68, 80, .25);
+}
+
+.c-site-footer {
+    box-shadow: 0 -2px 4px rgba(43, 68, 80, .25);
+}
+
+.c-site-nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-site-nav__wordmark {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.c-site-nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.c-site-nav__item+.c-site-nav__item {
+    margin-left: .5rem;
+}
+
+.c-site-nav__link {
+    color: #dfebed;
+    padding: .25rem .5rem;
+    transition: opacity 150ms ease;
+}
+
+.c-site-nav__link:hover,
+.c-site-nav__link:focus {
+    opacity: .75;
+}
+
+.c-site-nav__link:active {
+    opacity: 1;
+}
+
+.blog-c {
+    background: #fefefe;
+    box-shadow: 0 2px 4px rgba(43, 68, 80, .25);
+}
+
+.blog-c>*:first-child {
+    margin-top: 0;
+}
+
+.blog-c>*:last-child {
+    margin-bottom: 0;
+}
+
+.blog-c+.blog-c {
+    margin-top: 1.5rem;
+}
+
+
+.c-button {
+    box-shadow: 0 2px 4px rgba(43, 68, 80, .25);
+    display: inline-block;
+    padding: .75rem 1.5rem;
+}
+
+.c-button:hover,
+.c-button:focus {
+    opacity: .75;
+}
+
+.c-button:active {
+    opacity: 1;
+}
+
+.c-button--primary {
+    background: rgb(247, 54, 54);
+    color: #fefefe;
+    transition: opacity 150ms ease;
+}
+
+
+
+/**
+* UTILITIES
+*/
+.u-no-margin {
+    margin: 0;
+}
+
+.u-no-padding {
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+/*-----------------------Single Page View OF Blogs--------------------*?
+/* Left column */
+.blog-column {
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.blogs-column {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+
+
+}
+
+.blogs-column .fakeimg {
+    background-color: white;
+    box-shadow: 6px 2px 10px 5px rgba(0, 0, 0, 0.147);
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    padding: 10px;
+
+}
+
+/* Add a card effect for articles */
+.blog-column-card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.blogs-column-card h2 {
+    font-size: 26px;
+    padding: 5px;
+}
+
+.blog-column-card h3 {
+    padding: 10px;
+}
+
+.blog-column-card a {
+    text-decoration: none;
+    font-size: 20px;
+
+    color: #df0678;
+}
+
+/* Clear floats after the columns */
+.blog:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 750px) {
+
+    .blog-column,
+    .blogs-column {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width:650px) {
+
+    .blog-column-card img {
+        width: 100%;
+    }
+}
